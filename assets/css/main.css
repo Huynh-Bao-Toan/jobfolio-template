@@ -1,5 +1,5 @@
 body {
-  background-color: var(--grey-200, #e5e7ea);
+  background-color: #fff;
 }
 
 header > #navbar {
@@ -16,8 +16,9 @@ header > #navbar {
 }
 
 #navbar .account__btn--icon {
-  margin: 0 1.5rem;
-  padding: 0;
+  border-radius: 50px;
+  padding: 0.875rem 1.375rem;
+  color: #000;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,50 +26,62 @@ header > #navbar {
   background-color: transparent;
   border: none;
 }
-
-#body__container {
-  padding: 0 4.375rem;
-}
-
-#body__container .main__left--top {
-  padding: 3.75rem 0;
-  border-bottom: 1px dashed #676e76;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-top-right-radius: 16px;
-  border-top-left-radius: 16px;
-}
-#body__container .main__left--center {
-  padding: 1.875rem 0;
-}
-
-#body__container .main__left--bottom {
-  border-bottom-right-radius: 16px;
-  border-bottom-left-radius: 16px;
-  padding-top: 1rem;
-  padding-bottom: 2.5rem;
-}
-
-#body__container .main__right--top {
-  border-bottom: 1px dashed #676e76;
-  padding: 1.5rem 1.5rem 2.5rem;
-}
-#body__container .main__right--center {
-  padding: 1.5rem 0 1.5rem;
-}
-#body__container .main__center--top {
-  padding: 0 1.125rem;
-}
-.main__center--posts #post {
-  margin-top: 10px;
-  padding: 2.1875rem 1.125rem;
-  background-color: #fff;
-  border-radius: 8px;
-}
+/* #body__container {
+  padding: 0 9.375rem;
+} */
 footer > .footer__container {
-  margin-top: 6rem;
   padding: 5rem 9.375rem;
   background-color: #1a1d1f;
+}
+
+#body__container .howItWork__card--title {
+  font-size: 3.75rem;
+  color: #24292e;
+  font-weight: 700;
+  position: relative;
+}
+#body__container .howItWork__card--title::before {
+  content: "";
+  position: absolute;
+  background-color: #ffda44;
+  border-radius: 4px;
+  width: 1.75rem;
+  height: 1.75rem;
+  bottom: 10px;
+  left: -10px;
+  z-index: -1;
+}
+#body__container .howItWork__card--content {
+  font-size: 1.25rem;
+  color: #676e76;
+  width: 23.375rem;
+  position: relative;
+}
+
+#body__container .howItWork__card--content::after {
+  content: "";
+  position: absolute;
+  /* background-color: #ffda44; */
+  border: 4px solid;
+  border-color: transparent #5f19f2 #5f19f2 transparent;
+  border-radius: 4px;
+  width: 1.75rem;
+  height: 1.75rem;
+  bottom: 0px;
+  right: -10px;
+}
+
+#body__container .articles__overlay::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 46.35%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
