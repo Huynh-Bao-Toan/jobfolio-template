@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jobfolio | applyCV</title>
+    <!--font chữ-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700&family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!--bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!--css-->
+    <link rel="stylesheet" href="assets/css/applyCV.css" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+  </head>
+  <body>
+    <div
+      style="
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+      "
+    >
+      <div
+      id="modal"
+        style="
+          max-width: 73.25rem;
+          max-height: 52.875rem;
+          background-color: #fff;
+          padding: 3.4375rem;
+          border-radius: 10px;
+          margin-top: 3.125rem;
+        "
+      >
+        <div style="text-align: center; font-size: 2.5rem; font-weight: 700; margin-top: 1.5rem;">Apply with your <span  style="color: #8C54FD">Jobfolio</span> Profile</div>
+        <div style="color: #676E76; font-size: 1.125rem;">
+          Your application will be submitted along with a preview of your
+          Jobfolio Profile and most recent projects
+        </div>
+        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+          <div style="width: 6rem; height: 6rem; margin-bottom: 1.5rem;">
+            <img src="assets/images/janeCooperAvt.png" alt="" style="width: 100%; height: 100%;"/>
+          </div>
+          <div>
+            <span style="font-size: 1.25rem;">Brooklyn Simmons</spa>
+            <span>Hanoi, Vietnam</span>
+          </div>
+          <div style="margin-top: 1.25rem;">
+            <button style="border-radius: 3.125rem;background-color: #fff;outline: none;border: 1px solid var(--primary-black, #000); padding: 0.625rem 1.125rem; display: flex; align-items: center;">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+              >
+                <path
+                  d="M16.2984 1.70163C15.5295 0.932789 14.283 0.932789 13.5141 1.70163L12.6463 2.56949L15.4305 5.35373L16.2984 4.48587C17.0672 3.71702 17.0672 2.47048 16.2984 1.70163Z"
+                  fill="black"
+                />
+                <path
+                  d="M14.635 6.14922L11.8508 3.36499L5.55015 9.66562C5.08755 10.1282 4.74751 10.6988 4.56075 11.3258L3.96091 13.3394C3.90195 13.5374 3.95621 13.7517 4.10225 13.8977C4.2483 14.0438 4.46264 14.098 4.66059 14.0391L6.67426 13.4392C7.30123 13.2525 7.8718 12.9124 8.33439 12.4498L14.635 6.14922Z"
+                  fill="black"
+                />
+                <path
+                  d="M3.9375 3.93749C2.69486 3.93749 1.6875 4.94485 1.6875 6.18749V14.0625C1.6875 15.3051 2.69486 16.3125 3.9375 16.3125H11.8125C13.0551 16.3125 14.0625 15.3051 14.0625 14.0625V10.125C14.0625 9.81433 13.8107 9.56249 13.5 9.56249C13.1893 9.56249 12.9375 9.81433 12.9375 10.125V14.0625C12.9375 14.6838 12.4338 15.1875 11.8125 15.1875H3.9375C3.31618 15.1875 2.8125 14.6838 2.8125 14.0625V6.18749C2.8125 5.56617 3.31618 5.06249 3.9375 5.06249H7.875C8.18566 5.06249 8.4375 4.81065 8.4375 4.49999C8.4375 4.18933 8.18566 3.93749 7.875 3.93749H3.9375Z"
+                  fill="black"
+                />
+              </svg>
+              <span style="font-weight: 600;margin-left: 6px; font-size: 0.875rem;">Edit Profile</span>
+            </button>
+          </div>
+        </div>
+        <div>
+          <form action="">
+           <div style="display: flex; flex-direction: column;">
+            <label for="cover-letter" style="margin-bottom: 10px;">Cover letter</label>
+            <textarea placeholder="Write a cover letter..." name="" id="cover-letter" cols="30" rows="10" style="width: 100%; resize: none; color: #9EA5AD; padding: 0.625rem; border-radius: 8px;
+            border: 1px solid var(--grey-300, #CED2D6); outline: none;"></textarea>
+           </div>
+            <div style="margin-top: 2.75rem; display: flex; justify-content: center; ">
+              <button type="submit" style="
+                outline: none;
+                border: none;
+                background-color: #8C54FD;
+                color: #fff;
+                padding:   0.875rem 1.375rem;
+border-radius: 3.125rem;
+
+                " id="submitSuccess">
+                <span style="font-weight: 600; margin-right: 8px;">Apply now</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                >
+                  <path
+                    d="M11.25 3.75L17.5 10M17.5 10L11.25 16.25M17.5 10H2.5"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="javascript/apply-cv.js">
+
+    </script>
+  </body>
+</html>
