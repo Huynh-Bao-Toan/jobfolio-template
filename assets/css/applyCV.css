@@ -1,3 +1,43 @@
 body {
   background-color: #7c7b7b;
 }
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 4.8px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 639px) {
+  html {
+    font-size: 5.06666667px;
+  }
+}
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 5.33333333px;
+  }
+}
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 6.4px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 8.53333333px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  html {
+    font-size: 10.6666667px;
+  }
+}
+@media screen and (min-width: 1536px) {
+  html {
+    font-size: 12.8px;
+  }
+}
+@media screen and (min-width: 1792px) {
+  html {
+    font-size: 16px;
+  }
+}
