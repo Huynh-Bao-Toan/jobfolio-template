@@ -1,0 +1,67 @@
+body {
+  background-color: var(--grey-200, #e5e7ea);
+}
+
+header > #navbar {
+  padding: 30px 9.375rem;
+}
+
+#navbar .navbar__item {
+  font-size: 1.125rem;
+  padding: 0 3.125rem;
+}
+#navbar .account__container {
+  display: flex;
+  align-items: center;
+}
+
+#navbar .account__btn--icon {
+  margin: 0 1.5rem;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  background-color: transparent;
+  border: none;
+}
+
+#body__container {
+  padding: 0 4.375rem;
+}
+
+#body__container .main__left--top {
+  padding: 3.75rem 0;
+  border-bottom: 1px dashed #676e76;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+}
+#body__container .main__left--center {
+  padding: 1.875rem 0;
+}
+
+#body__container .main__right--top {
+  border-bottom: 1px dashed #676e76;
+  padding: 1.5rem 1.5rem 2.5rem;
+}
+#body__container .main__right--center {
+  padding: 1.5rem 0 1.5rem;
+}
+#body__container .main__center--top {
+  padding: 0 1.125rem;
+}
+.main__center--posts #post {
+  margin-top: 10px;
+  padding: 2.1875rem 1.125rem;
+  background-color: #fff;
+  border-radius: 8px;
+}
+footer > .footer__container {
+  margin-top: 6rem;
+  padding: 5rem 9.375rem;
+  background-color: #1a1d1f;
+}
